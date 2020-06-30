@@ -20,7 +20,7 @@ sudo apt-get install vim -y
 clear
 
 echo 'Instalando wget'
-sudo apt-get install wget -y
+sudo apt-get install wget nmap -y
 
 echo 'Instalando Chrome'
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -29,7 +29,7 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 echo 'Instalando terminator'
 sudo apt-get install terminator -y
 
-echo 'Instalando Teamviewr'
+echo 'Instalando Teamviewer'
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 sudo apt install -y ./teamviewer_amd64.deb
 
@@ -56,9 +56,14 @@ snap install spotify
 echo 'instalando git'
 sudo apt install git -y
 
+echo 'install remmina'
+sudo apt install remmina -y
 
+echo 'install keepass2'
+sudo apt install keepass2
 
-
+echo 'removing unnecessary packages'
+sudo apt autoremove -y
 
 
 
